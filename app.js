@@ -22,7 +22,7 @@ app.locals.title = `${capitalized(projectName)} Ironhack`
 
 // 👇 Start handling routes here
 const index = require('./routes/index')
-app.use('/index', index)
+app.use('/', index)
 
 const movies = require('./routes/movies')
 app.use('/movies', movies)

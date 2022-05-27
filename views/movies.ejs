@@ -1,8 +1,12 @@
-<p> movies </p>
-<% for( let index = 0; index < movies.length; index +=1 ) { %>
-    <div><img src="<%= movies[index].image %>" alt="Film picture"></div>
-    <h3><%-movies[index].title%></h3>
-    <div><a href="/<%= movies[index].title %>">See more</a></div>  
-    
-<% } %>
+<!-- display movies on this site-->
+
+<div>
+    <% for( let index = 0; index < movies.length; index +=1 ) { %>
+        <div><img src="<%= movies[index].image %>" alt="Film picture"></div>
+        <h3><%-movies[index].title%></h3>
+        <div><a href="/movies/<%= movies[index]._id %>">See more</a></div>  
+        
+    <% } %>
+</div>
+
 
