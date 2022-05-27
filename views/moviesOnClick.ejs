@@ -1,7 +1,6 @@
 <!-- display movies on click on this site-->
 
-<div>
-    
+<div>   
     <div><img src="<%= movieToCheck.image %>" alt="Film picture"></div>
     <div>
         <h3><%-movieToCheck.title%></h3>
@@ -14,12 +13,10 @@
         <p><strong>Description: </strong></p>
         <p><%-movieToCheck.description%></p>
         <p><strong>Showtimes: </strong></p>
-        <ul><% movieToCheck.showtimes.forEach(time => {%>
-            <li><%= time%></li>
-        <% }) %>
-        </ul>
-    </div>
-    
-        
-   
+        <p>
+            <% movieToCheck.showtimes.forEach(time => {%>
+                <%= time%> |
+            <% }) %>
+        </p>
+    </div>   
 </div>
