@@ -31,6 +31,7 @@ h1{
 #chack-button{
   font-size: 30px;
   margin-right: 100px;
-  border-radius: 5px;
+  border-radius: 25px;
   height: 50px;
+  width: 400px;
 }
