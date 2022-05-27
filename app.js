@@ -22,7 +22,10 @@ app.locals.title = `${capitalized(projectName)} Ironhack`
 
 // 👇 Start handling routes here
 const index = require('./routes/index')
-app.use('/', index)
+app.use('/index', index)
+
+const movies = require('./routes/movies')
+app.use('/movies', movies)
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app)
