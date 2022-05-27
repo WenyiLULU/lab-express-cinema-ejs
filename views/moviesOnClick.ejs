@@ -1,11 +1,11 @@
 <!-- display movies on click on this site-->
 
-<div>   
+<div class="singleMovie">   
     <div><img src="<%= movieToCheck.image %>" alt="Film picture"></div>
     <div>
         <h3><%-movieToCheck.title%></h3>
         <p><strong>Director: </strong><%-movieToCheck.director%></p>
-        <p><strong>Star: </strong></p>
+        <p><strong>Stars: </strong></p>
         <ul><% movieToCheck.stars.forEach(star => {%>
             <li><%= star%></li>
         <% }) %>
